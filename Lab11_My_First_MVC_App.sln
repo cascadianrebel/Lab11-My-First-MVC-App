@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab11-My-First-MVC-App", "Lab11-My-First-MVC-App\Lab11-My-First-MVC-App.csproj", "{63F9B725-C5B5-4A14-B0D4-83A5C875A86C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab11_My_First_MVC_App", "Lab11-My-First-MVC-App\Lab11_My_First_MVC_App.csproj", "{63F9B725-C5B5-4A14-B0D4-83A5C875A86C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

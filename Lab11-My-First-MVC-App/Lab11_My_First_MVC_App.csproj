@@ -5,10 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <None Include="wwwroot\personOfTheYear.csv" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
