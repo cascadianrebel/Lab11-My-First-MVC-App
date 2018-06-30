@@ -4,6 +4,9 @@
 ## Features
 Using a csv file of all the "Time" Persons of the year (1927- present). This application allows the user to list all the winners within the span of any two years determined by the user. 
 
+## Visuals
+![Time Person Search](https://github.com/cascadianrebel/Lab11-My-First-MVC-App/blob/master/Lab11-My-First-MVC-App/Capture.PNG)
+
 ## Getting Started
 Visual Studio 2017
 1. System.Collections;
