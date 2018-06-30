@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.TagHelpers;
 
 namespace Lab11_My_First_MVC_App.Models
 {
-    public class Person : IEnumerable<Person>
+    public class Person
     {
         public int Year { get; set; }
         public string Honor { get; set; }
@@ -21,10 +21,8 @@ namespace Lab11_My_First_MVC_App.Models
         public string Category { get; set; }
         public string Context { get; set; }
 
-        public IEnumerator<Person> GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+        public List<Person> EditList { get; set; } = new List<Person>();
+
 
         public List<Person> GetPeople(int begYear, int endYear)
         {
@@ -61,15 +59,13 @@ namespace Lab11_My_First_MVC_App.Models
             //with a complete list of people, query the list to display within the user defined parameters
             List<Person> listofPeople = people.Where(p => (p.Year >= begYear) && (p.Year <= endYear)).ToList();
 
+            //EditList = people.Where(p => (p.Year >= begYear) && (p.Year <= endYear)).ToList();
+
             //returns a filtered list
             return listofPeople;
 
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
     }
 
     

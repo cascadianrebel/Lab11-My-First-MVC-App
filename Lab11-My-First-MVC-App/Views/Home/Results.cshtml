@@ -1,4 +1,4 @@
-﻿@model Lab11_My_First_MVC_App.Models.Person
+﻿@model List<Lab11_My_First_MVC_App.Models.Person>
 
 <head>
     <link href="~/StyleSheet.css" rel="stylesheet" type="text/css" />
@@ -25,7 +25,7 @@
         @foreach (var item in Model)
         {
         <tr>
-            <td>@item.Year</td>
+            <td>@item.Year.</td>
             <td>@item.Honor</td>
             <td>@item.Name</td>
             <td>@item.Country</td>

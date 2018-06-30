@@ -20,17 +20,18 @@ namespace Lab11_My_First_MVC_App.Controllers
         [HttpPost]
         public IActionResult Index(int begYear, int endYear)
         {
-            return RedirectToAction("Results", new { begYear, endYear });
+            return RedirectToAction("Results", new {startYear = begYear, finalYear = endYear });
         }
 
-        public IActionResult Results(int begYear, int endYear)
+        public IActionResult Results(int startYear, int finalYear)
         {
             //allows me to send the results data to the view
             ViewData["Message"] = "Person of the year";
 
             Person Person = new Person();
-
-            return View(Person.GetPeople(begYear, endYear));
+            //Person.GetPeople(startYear, finalYear);
+            //return View(Person);
+            return View(Person.GetPeople(startYear, finalYear));
         }
     }
 }
